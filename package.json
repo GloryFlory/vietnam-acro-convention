@@ -1,0 +1,14 @@
+{
+  "name": "vietnam-acro-convention",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Vietnam Acro Convention 2027 — official festival website",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

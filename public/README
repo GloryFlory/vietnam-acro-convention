@@ -1,0 +1,6 @@
+# Drop static assets here — they'll be served as-is during dev and copied to dist/ on build.
+# Suggested folder structure:
+#   public/
+#   ├── images/       ← photos of teachers, Hoi An, event
+#   ├── videos/       ← promo reel, testimonials
+#   └── fonts/        ← any self-hosted font files
