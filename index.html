@@ -356,6 +356,19 @@
       background: rgba(255,255,255,.04); color: var(--tc); border: 1px solid var(--tc); opacity: .7;
     }
 
+    /* ─── TEACHERS (coming soon) ─────────────────────────── */
+    #teachers {
+      position: relative; overflow: hidden; text-align: center;
+      background:
+        radial-gradient(ellipse 70% 90% at 50% 0%, rgba(212,160,23,.14) 0%, transparent 60%),
+        linear-gradient(160deg, #2C1E10 0%, #3D2810 45%, #1C1208 100%);
+    }
+    .teachers-inner { max-width: 640px; }
+    #teachers .eyebrow { color: var(--gold); }
+    #teachers .sec-title { color: var(--cream); margin-bottom: 1.1rem; }
+    #teachers > .container > p { font-size: 1.08rem; line-height: 1.8; color: rgba(245,236,215,.72); margin-bottom: 2.3rem; }
+    #teachers .btn-primary { display: inline-block; }
+
     /* ─── LOCATION ───────────────────────────────────────── */
     #location {
       background: var(--jade); position: relative; overflow: hidden;
@@ -385,6 +398,16 @@
     }
     .feat-content h4 { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--cream); margin-bottom: .2rem; }
     .feat-content p { font-size: .87rem; color: rgba(245,236,215,.6); line-height: 1.6; margin: 0; }
+
+    .venue-note {
+      margin-top: 3.5rem; padding: 1.75rem 2rem; text-align: center;
+      background: rgba(212,160,23,.06); border: 1px solid rgba(212,160,23,.22);
+      border-radius: 4px; position: relative; z-index: 1;
+    }
+    .venue-note p { font-size: .92rem; color: rgba(245,236,215,.75); line-height: 1.65; max-width: 640px; margin: 0 auto .75rem; }
+    .venue-note strong { color: var(--cream); }
+    .venue-note a { color: var(--gold); font-size: .85rem; font-weight: 500; text-decoration: none; letter-spacing: .02em; }
+    .venue-note a:hover { text-decoration: underline; }
 
     /* ─── REGISTER ───────────────────────────────────────── */
     #register { background: var(--cream); color: var(--tx-dk); }
@@ -453,21 +476,6 @@
       flex-wrap: wrap; gap: .75rem;
     }
     .footer-bottom p { font-size: .78rem; color: rgba(245,236,215,.22); }
-
-    /* ─── HIGHLIGHT BANNER ───────────────────────────────── */
-    .vibe-banner {
-      background: linear-gradient(135deg, var(--crimson) 0%, #6B0E10 50%, var(--dark-warm) 100%);
-      padding: 3.5rem clamp(16px, 5vw, 60px);
-      text-align: center;
-    }
-    .vibe-banner h2 {
-      font-family: var(--serif); font-size: clamp(1.6rem, 3.5vw, 2.6rem);
-      font-weight: 300; font-style: italic; color: var(--cream); line-height: 1.35;
-      max-width: 700px; margin: 0 auto;
-    }
-    .vibe-banner h2 strong {
-      font-style: normal; font-weight: 600; color: var(--gold-lt);
-    }
 
     /* feat icons */
     .feat-icon { color: var(--gold); display: flex; align-items: center; justify-content: center; }
@@ -609,20 +617,10 @@
   </div>
 </section>
 
-<!-- ── VIBE BANNER ──────────────────────────────────────── -->
-<div class="vibe-banner">
-  <h2 class="reveal">
-    <em>"Imagine practising Acroyoga as golden lanterns float above<br>
-    the ancient rooftops of Hoi An at dusk."</em>
-    <br><br>
-    <strong>This is VAC 2027.</strong>
-  </h2>
-</div>
-
-<!-- ── DIVIDER ─────────────────────────────────────────── -->
+<!-- ── DIVIDER: about (cream) → workshops (dark-mid) ─────── -->
 <div style="overflow:hidden; line-height:0; background:var(--dark-mid);">
   <svg viewBox="0 0 1440 64" preserveAspectRatio="none" style="display:block;width:100%;">
-    <path d="M0,0 C300,64 700,0 1000,48 C1200,80 1340,20 1440,48 L1440,0 Z" fill="#9B2226"/>
+    <path d="M0,64 C320,10 700,64 1020,20 C1220,-8 1360,42 1440,20 L1440,64 Z" fill="#FBF5E6"/>
   </svg>
 </div>
 
@@ -668,10 +666,28 @@
   </div>
 </section>
 
-<!-- ── DIVIDER: workshops (dark-mid) → register (cream) ──── -->
-<div style="overflow:hidden; line-height:0; background:var(--cream);">
+<!-- ── DIVIDER: workshops (dark-mid) → teachers (gold) ───── -->
+<div style="overflow:hidden; line-height:0; background:#2C1E10;">
   <svg viewBox="0 0 1440 64" preserveAspectRatio="none" style="display:block;width:100%;">
     <path d="M0,64 C400,0 800,64 1100,20 C1260,0 1360,40 1440,24 L1440,64 Z" fill="#1C1510"/>
+  </svg>
+</div>
+
+<!-- ── TEACHERS (coming soon) ──────────────────────────────── -->
+<section id="teachers">
+  <div class="container teachers-inner">
+    <span class="eyebrow">World-Class Faculty</span>
+    <h2 class="sec-title">Teachers <em>Announcing Soon</em></h2>
+    <div class="gold-bar center"></div>
+    <p>We're in conversation with acroyoga teaching couples from around the world to build a lineup worthy of VAC 2027. The full faculty announcement is coming — be on the list when it drops.</p>
+    <a href="#register" class="btn-primary">Join the Waitlist</a>
+  </div>
+</section>
+
+<!-- ── DIVIDER: teachers (gold) → register (cream) ───────── -->
+<div style="overflow:hidden; line-height:0; background:var(--cream);">
+  <svg viewBox="0 0 1440 64" preserveAspectRatio="none" style="display:block;width:100%;">
+    <path d="M0,64 C320,10 700,64 1020,20 C1220,-8 1360,42 1440,20 L1440,64 Z" fill="#2C1E10"/>
   </svg>
 </div>
 
@@ -783,6 +799,11 @@
         </div>
       </div>
     </div>
+
+    <div class="venue-note reveal">
+      <p><strong>The exact venue is still TBD.</strong> We're scouting spaces in and around Hoi An that connect practitioners to nature. Know a garden, retreat centre, or beachside spot that would be perfect for VAC 2027?</p>
+      <a href="mailto:vietnamacroconvention@gmail.com?subject=Venue%20suggestion%20for%20VAC%202027">Send us your suggestion →</a>
+    </div>
   </div>
 </section>
 
@@ -846,10 +867,8 @@
       <p>Vietnam Acro Convention<br>March 5–7, 2027 · Hoi An, Vietnam</p>
       <p>The first Acroyoga festival in Vietnam — a celebration of movement, community, and culture in one of the world's most magical settings.</p>
       <div class="footer-social">
-        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-        <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" style="fill:currentColor;stroke:none"/></svg></a>
-        <a href="#register" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+        <a href="https://www.instagram.com/acroyoga_vietnam/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="mailto:vietnamacroconvention@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
       </div>
     </div>
     <div class="footer-col">
@@ -864,10 +883,8 @@
     <div class="footer-col">
       <h3>Connect</h3>
       <ul>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">YouTube</a></li>
-        <li><a href="#">Email Us</a></li>
+        <li><a href="https://www.instagram.com/acroyoga_vietnam/" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="mailto:vietnamacroconvention@gmail.com">Email Us</a></li>
       </ul>
     </div>
   </div>
